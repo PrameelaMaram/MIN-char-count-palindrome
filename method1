@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+    char str[20];
+    int i,j,count=0;
+    printf("enter string");
+    scanf("%s",str);
+   // printf("%d\n",strlen(str));
+    for(i=0,j=strlen(str)-1;i<j;)
+    {
+        if(str[i]!=str[j])
+        {
+            count++;
+            j--;
+        }
+        else
+        {
+            i++;
+            j--;
+        }
+    }
+    printf("\n the count is %d",count);
+
+}
